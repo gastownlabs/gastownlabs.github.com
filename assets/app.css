@@ -46,8 +46,10 @@ header {
   z-index: 999;
   background: rgba(226, 226, 226, 0.95) url(images/highlight.png) no-repeat 100% bottom; }
 
-section h3 {
-  margin-bottom: 60px; }
+section {
+  margin-top: 100px; }
+  section h3 {
+    margin-bottom: 60px; }
 
 h1, h2, h3, h4, h5 {
   font-weight: normal; }
@@ -61,7 +63,7 @@ h2, h3 {
   text-shadow: 1px 1px 0 white; }
 
 #process {
-  margin-top: 250px; }
+  margin-top: 300px; }
   #process #steps {
     display: block;
     position: relative;

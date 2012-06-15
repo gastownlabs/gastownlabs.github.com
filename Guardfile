@@ -1,6 +1,8 @@
-guard 'sass', :input => 'src', :output => 'public'
-guard 'haml', :input => 'src', :output => 'public' do
+guard 'sass', :input => 'src', :output => 'assets'
+guard 'coffeescript', :input => 'src', :output => 'assets'
+
+guard 'haml', :input => 'src' do
   watch %r{src/index.haml}
 end
 
-guard 'coffeescript', :input => 'src', :output => 'public'
+
