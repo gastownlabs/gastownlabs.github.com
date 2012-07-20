@@ -19,7 +19,8 @@ body {
   color: #666666;
   font-family: "OpenSans-Light", sans-serif; }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -31,25 +32,30 @@ body {
   background: #e2e2e2; }
 
 header,
-section,
-footer {
-  display: block;
+section {
   width: 80%;
   margin: 0 10%;
-  text-align: center;
-  padding: 40px 0;
-  border-bottom: 1px solid #d2d2d2;
-  background: transparent url(images/highlight.png) no-repeat 100% bottom; }
+  text-align: center; }
 
 header {
+  padding: 10px 0;
+  background: rgba(226, 226, 226, 0.9) url(images/highlight.png) no-repeat 100% bottom;
+  border-bottom: 1px solid #d2d2d2;
   position: fixed;
   z-index: 999;
-  background: rgba(226, 226, 226, 0.95) url(images/highlight.png) no-repeat 100% bottom; }
+  display: none; }
 
 section {
-  margin-top: 100px; }
+  margin-top: 500px;
+  padding: 40px 0; }
   section h3 {
     margin-bottom: 60px; }
+  section#intro {
+    margin-top: 0px;
+    background: #e2e2e2 url(images/highlight.png) no-repeat 100% bottom;
+    border-bottom: 1px solid #d2d2d2; }
+    section#intro img {
+      margin-top: 100px; }
 
 h1, h2, h3, h4, h5 {
   font-weight: normal; }
@@ -60,53 +66,50 @@ h2, h3 {
   font-size: 30px;
   margin: 0;
   padding: 0;
-  text-shadow: 1px 1px 0 white; }
+  text-shadow: 1px 1px 0 #efefef; }
 
-#process {
-  margin-top: 300px; }
-  #process #steps {
+#process #steps {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 689px;
+  overflow: hidden;
+  padding-left: 10px; }
+  #process #steps h4 {
+    text-shadow: 1px 1px 0 #efefef; }
+  #process #steps li#strategy {
+    background: transparent url(images/strategy.png) left top no-repeat;
+    margin-right: -30px; }
+    #process #steps li#strategy h4 {
+      color: #c74e32; }
+  #process #steps li#design {
+    background: transparent url(images/design.png) left top no-repeat;
+    margin-right: -30px; }
+    #process #steps li#design h4 {
+      color: #b6b100; }
+  #process #steps li#build {
+    background: transparent url(images/build.png) left top no-repeat; }
+    #process #steps li#build h4 {
+      color: #3a9aa9; }
+  #process #steps li.step {
     display: block;
-    position: relative;
-    margin: auto;
-    width: 689px;
-    overflow: hidden;
-    padding-left: 10px; }
-    #process #steps h4 {
-      text-shadow: 1px 1px 0 #eeeeee; }
-    #process #steps li#strategy {
-      background: transparent url(images/strategy.png) left top no-repeat;
-      margin-right: -30px; }
-      #process #steps li#strategy h4 {
-        color: #c74e32; }
-    #process #steps li#design {
-      background: transparent url(images/design.png) left top no-repeat;
-      margin-right: -30px; }
-      #process #steps li#design h4 {
-        color: #b6b100; }
-    #process #steps li#build {
-      background: transparent url(images/build.png) left top no-repeat; }
-      #process #steps li#build h4 {
-        color: #3a9aa9; }
-    #process #steps li.step {
-      display: block;
-      margin: 0;
-      float: left;
-      width: 248px; }
-      #process #steps li.step h4 {
-        font-size: 28px;
-        margin: 105px auto;
-        text-align: center; }
-      #process #steps li.step ul {
-        padding-top: 30px; }
-        #process #steps li.step ul li {
-          display: block;
-          text-align: center;
-          font-size: 110%;
-          line-height: 25px; }
+    margin: 0;
+    float: left;
+    width: 248px; }
+    #process #steps li.step h4 {
+      font-size: 28px;
+      margin: 105px auto;
+      text-align: center; }
+    #process #steps li.step ul {
+      padding-top: 30px; }
+      #process #steps li.step ul li {
+        display: block;
+        text-align: center;
+        font-size: 110%;
+        line-height: 25px; }
 
 #project {
-  text-align: center;
-  margin-top: 60px; }
+  text-align: center; }
   #project h3 {
     margin-bottom: 40px; }
   #project h4 {

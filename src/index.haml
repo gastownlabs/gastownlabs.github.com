@@ -7,7 +7,13 @@
     %script{:type => "text/javascript", :src => "assets/js/jquery.scrollorama.js"}
     %script{:type => "text/javascript", :src => "assets/app.js"}
   %body
-    %header#intro
+    %header
+      %img#logo.scale-with-grid{:src => 'assets/images/logo-header.png', :alt => 'Gastown Labs', :width => '500', :height => '73'}
+      %h2 We Build Amazing Apps
+      %br
+      
+      
+    %section#intro
       %img#logo.scale-with-grid{:src => 'assets/images/logo.png', :alt => 'Gastown Labs', :width => '792', :height =>  '115'}
       %h2 We Build Amazing Apps
       %br
@@ -37,10 +43,8 @@
     %section#project
       %h3 Recent Project
       %img#qwiqq{:src => 'assets/images/qwiqq.png', :alt => 'Screenshot of Qwiqq for iPhone', :width => '597', :height => '526'}
-      %h4 Qwiqq iOS and web platform
+      %h4#unpin Qwiqq iOS and web platform
       %p
         Skateboard brunch iphone, banksy tattooed seitan food truck. Wayfarers pitchfork +1, 
         portland high life sustainable american apparel next level jean shorts four loko seitan 
         tofu williamsburg. Brunch sustainable organic banh mi scenester.
-
-    %footer
